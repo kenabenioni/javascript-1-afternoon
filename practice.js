@@ -27,7 +27,7 @@ var newGreeting = function(name){
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-finalGreeting = (name) =>  "Hello, " + name;
+var finalGreeting = (name) =>  "Hello, " + name;
 
 
 //////////////////PROBLEM 4////////////////////
@@ -44,11 +44,10 @@ var groceries = ["apples", "milk", "eggs", "bread"];
 //doubleCheck should return the array.
 
 function doubleCheck (arr){
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i]!="chocolate"){
-      arr.push("chocolate")
-    }
+  if(!arr.includes("chocolate")){
+    arr.push("chocolate")
   }
+  
   return arr
 }
 
